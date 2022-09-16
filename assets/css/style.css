@@ -93,7 +93,7 @@ body {
 
 hr {
     margin: 0 0;
-    color: var(--ar-border-color);
+    color: #fff;
     border: 0;
     border-top: var(--ar-border-width) solid;
     opacity: 1
@@ -7056,6 +7056,10 @@ fieldset:disabled .btn {
     background-color: RGBA(18, 21, 25, var(--ar-bg-opacity, 1)) !important
 }
 
+.signinbg {
+    background-color: #f4fafd !important
+}
+
 .link-primary {
     color: #ffce00 !important
 }
@@ -7503,6 +7507,10 @@ fieldset:disabled .btn {
 
 .top-0 {
     top: 0 !important
+}
+
+.top-10 {
+    top: 10% !important
 }
 
 .top-50 {
@@ -8069,6 +8077,10 @@ fieldset:disabled .btn {
     margin-top: 6rem !important
 }
 
+.mt-7 {
+    margin-top: 9rem !important
+}
+
 .mt-auto {
     margin-top: auto !important
 }
@@ -8124,6 +8136,11 @@ fieldset:disabled .btn {
 .mb-5 {
     margin-bottom: 3rem !important
 }
+
+.mb-6 {
+    margin-bottom: 5rem !important
+}
+
 
 .mb-auto {
     margin-bottom: auto !important
@@ -8415,6 +8432,14 @@ fieldset:disabled .btn {
     padding-top: 3rem !important
 }
 
+.pt-6 {
+    padding-top: 5rem !important
+}
+
+.pt-7 {
+    padding-top: 9rem !important
+}
+
 .pe-0 {
     padding-right: 0 !important
 }
@@ -8461,6 +8486,10 @@ fieldset:disabled .btn {
 
 .pb-5 {
     padding-bottom: 3rem !important
+}
+
+.pb-6 {
+    padding-bottom: 5rem !important
 }
 
 .ps-0 {
@@ -8537,6 +8566,10 @@ fieldset:disabled .btn {
 
 .fs-6 {
     font-size: 1rem !important
+}
+
+.fs-7 {
+    font-size: calc(2.375rem + 1.5vw) !important
 }
 
 .fs-xl {
@@ -8780,6 +8813,19 @@ fieldset:disabled .btn {
 
 .pinebg {
     background-image: url('../../assets/img/pinetrestuniversebg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gatewaybg {
+    background-image: url('../../assets/img/gateway.svg');
+    background-repeat: no-repeat;
+    background-size: 17%;
+    background-position: bottom left;
+}
+
+.tradingbg {
+    background-image: url('../../assets/img/tradingbg.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -9148,6 +9194,9 @@ fieldset:disabled .btn {
     }
     .pt-xs-6 {
         padding-top: 5rem !important
+    }
+    .pb-xs-6 {
+        padding-bottom: 5rem !important
     }
 }
 
@@ -11098,6 +11147,9 @@ fieldset:disabled .btn {
     }
     .pt-lg-5 {
         padding-top: 3rem !important
+    }
+    .pt-lg-6 {
+        padding-top: 12rem !important
     }
     .pe-lg-0 {
         padding-right: 0 !important
@@ -14925,7 +14977,7 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 }
 
 .btn:not([class^=btn-outline-]):not([class*=" btn-outline-"]):not(.btn-secondary):not(.btn-light):not(.btn-link) {
-    --ar-btn-color: #1D1E2C
+    --ar-btn-color: #fff
 }
 
 .btn>[class^=ai-],
@@ -15008,10 +15060,10 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 .btn-dark {
     --ar-btn-hover-color: #fff;
     --ar-btn-active-color: #fff;
-    --ar-btn-hover-bg: #010101;
-    --ar-btn-active-bg: #010101;
-    --ar-btn-hover-border-color: #010101;
-    --ar-btn-active-border-color: #010101;
+    --ar-btn-hover-bg: #01473f;
+    --ar-btn-active-bg: #01473f;
+    --ar-btn-hover-border-color: #01473f;
+    --ar-btn-active-border-color: #01473f;
     --ar-btn-disabled-color: #fff
 }
 
