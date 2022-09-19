@@ -3885,9 +3885,9 @@ fieldset:disabled .btn {
     --ar-nav-tabs-border-color: transparent;
     --ar-nav-tabs-border-radius: var(--ar-border-radius);
     --ar-nav-tabs-link-hover-border-color: transparent;
-    --ar-nav-tabs-link-active-color: var(--ar-primary);
+    --ar-nav-tabs-link-active-color: var(--ar-dark);
     --ar-nav-tabs-link-active-bg: transparent;
-    --ar-nav-tabs-link-active-border-color: var(--ar-primary);
+    --ar-nav-tabs-link-active-border-color: var(--ar-dark);
     border-bottom: var(--ar-nav-tabs-border-width) solid var(--ar-nav-tabs-border-color)
 }
 
@@ -7723,6 +7723,16 @@ fieldset:disabled .btn {
     --ar-border-opacity: 1
 }
 
+.aboutmargin {
+    border-width: 9px;
+    border-color: #c8e2df;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
 .w-25 {
     width: 25% !important
 }
@@ -8818,6 +8828,13 @@ fieldset:disabled .btn {
     background-position: right;
 }
 
+.aboutceobg {
+    background-image: url('../../assets/img/aboutceo.svg');
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: right;
+}
+
 .herobg {
     background-image: url('../../assets/img/home-hero.png');
     background-repeat: no-repeat;
@@ -8850,8 +8867,21 @@ fieldset:disabled .btn {
     background-color: #def5f2;
 }
 
+.aboutitlebg {
+    background-image: url('../../assets/img/aboutbg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #def5f2;
+}
+
 .paymentbg {
     background-image: url('../../assets/img/paymentbg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutnotebg {
+    background-image: url('../../assets/img/aboutnote.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -8878,7 +8908,7 @@ fieldset:disabled .btn {
 
 .bg-warning {
     --ar-bg-opacity: 1;
-    background-color: rgba(var(--ar-warning-rgb), var(--ar-bg-opacity)) !important
+    background-color: #fffae5 !important
 }
 
 .bg-danger {
