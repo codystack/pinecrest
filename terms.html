@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Terms of Service | Pinecrest</title>
+        <meta name="description" content="Pinecrest is an alternative payment solutions company that facilitates the easy use of cryptocurrencies for everyday transactions">
+        <meta name="keywords" content="Bitcoin, Perfect Money, Digital assets, Gift cards, payments">
+        <meta name="author" content="ThankGod Okoro">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon-->
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+        <!-- Page loading styles-->
+        <style>.page-loading {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all .4s .2s ease-in-out;
+            transition: all .4s .2s ease-in-out;
+            background-color: #fff;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 9999;
+        }
+        .dark-mode .page-loading {
+            background-color: #121519;
+        }
+        .page-loading.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .page-loading-inner {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: opacity .2s ease-in-out;
+            transition: opacity .2s ease-in-out;
+            opacity: 0;
+        }
+        .page-loading.active > .page-loading-inner {
+            opacity: 1;
+        }
+        .page-loading-inner > span {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: normal;
+            color: #6f788b;
+        }
+        .dark-mode .page-loading-inner > span {
+            color: #fff;
+            opacity: .6;
+        }
+        .page-spinner {
+            display: inline-block;
+            width: 2.75rem;
+            height: 2.75rem;
+            margin-bottom: .75rem;
+            vertical-align: text-bottom;
+            background-color: #d7dde2; 
+            border-radius: 50%;
+            opacity: 0;
+            -webkit-animation: spinner .75s linear infinite;
+            animation: spinner .75s linear infinite;
+        }
+        .dark-mode .page-spinner {
+            background-color: rgba(255,255,255,.25);
+        }
+        @-webkit-keyframes spinner {
+            0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            }
+            50% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+            }
+        }
+        @keyframes spinner {
+            0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            }
+            50% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+            }
+        }
+        
+        </style>
+
+        <!-- Page loading scripts-->
+        <script>
+        (function () {
+            window.onload = function () {
+            const preloader = document.querySelector('.page-loading');
+            preloader.classList.remove('active');
+            setTimeout(function () {
+                preloader.remove();
+            }, 1500);
+            };
+        })();
+        </script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" id="google-font">
+
+        <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+        <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css"/>
+        <link rel="stylesheet" media="screen" href="assets/css/style.css">
+        <link rel="stylesheet" media="screen" href="assets/fonts/stylesheet.css">
+
+    </head>
+    <!-- Body-->
+    <body>
+        <!-- Page loading spinner-->
+        <div class="page-loading active">
+            <div class="page-loading-inner">
+                <div class="page-spinner"></div><span>Loading...</span>
+            </div>
+        </div>
+
+        <!-- Page wrapper-->
+        <main class="page-wrapper">
+
+            <!-- Navbar -->
+            <header class="navbar bg-light navbar-expand-lg fixed-top">
+                <div class="container">
+                    <div class="navbar-nav">
+                        <a class="navbar-brand nav-item pe-sm-3" href="./" style="text-decoration: none !important;">
+                        <img src="./assets/img/favicon.png" width="50px" alt="logo" srcset="">
+                        <h1 class="nav-link fw-bold mb-0 fs-1 py-0 px-0 text-dark">Pinecrest</h1>
+                        </a>
+                    </div>
+                
+                    <!-- <a class="navbar-brand dark-logo pe-sm-3" href="./">
+                        <img src="./assets/img/logo-light.png" width="200px" alt="logo" srcset="">
+                    </a> -->
+                    <a class="btn btn-outline-dark btn-sm bg-light fs-sm order-lg-3 d-none d-sm-inline-flex me-3 fw-normal" href="login" target="_self" rel="noopener">Sign In</a>
+                    <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex fw-normal text-black" href="register" target="_self" rel="noopener">Create Account</a>
+                    <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <nav class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav navbar-nav-scroll mx-auto" style="--ar-scroll-height: 520px;">
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-normal text-dark" href="about">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-normal text-dark" href="">About the CEO</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-normal text-dark" href="#" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <div class="dropdown-menu overflow-hidden p-0">
+                            <div class="d-lg-flex">
+                                <div class="mega-dropdown-column pt-1 pt-lg-3 pb-lg-4">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a class="dropdown-item fw-normal text-dark" href="">Refill</a></li>
+                                    <li><a class="dropdown-item fw-normal text-dark" href="">Business</a></li>
+                                    <li><a class="dropdown-item fw-normal text-dark" href="">OTC</a></li>
+                                </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-normal text-dark" href="">Learn</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-normal text-dark" href="">Careers</a>
+                        </li>
+
+                        </ul>
+                        <div class="d-sm-none p-3 mt-n3">
+                        <a class="btn btn-outline-dark btn-sm bg-light fw-normal w-100  mb-3" href="login" target="_blank" rel="noopener">
+                        Login</a>
+                        <a class="btn btn-primary w-100 btn-sm mb-1 fw-normal text-black" href="register" target="_blank" rel="noopener">
+                            Create Account</a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Title -->
+            <section class="bg-secondary py-6">
+                <div class="row text-center px-3 px-sm-0 pb-2 py-sm-3 py-md-4 py-lg-5">
+                    <h2 class="display-4 pt-xl-2 text-black">Terms Of Service</h2>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <section class="py-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 mx-auto">
+                            <h2 class="display-4 pt-xl-2 text-black">Introduction</h2>
+                            <p>This Terms of Use (this “Agreement”) is an agreement between you and Pinecrest Technologies UAB (“Pinecrest” or “We”) and governs your use of all Pinecrest Services. You unconditionally accept and agree to be bound by the terms and conditions in this Terms of Use including the Privacy Policy as well any applicable laws and guidelines when you access the Pinecrest Platform or use any of the Pinecrest Services. If you disagree with any part hereof, please do not use the Pinecrest Platform or any of the Pinecrest Services. You should read this Agreement carefully.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Terms of Service-->
+            <section class="bg-secondary py-6">
+                <div class="row text-center px-3 px-sm-0 pb-2 py-sm-3 py-md-4 py-lg-5">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card">
+                            <div class="card-body p-5">
+                                <div>
+                                    <div class="align-items-center d-flex mb-4">
+                                        <div>
+                                            <img src="assets/img/title-icon.svg" alt="" class="mb-1 me-3">
+                                        </div>
+                                        <div>
+                                            <h1 class="mb-0 text-black">Governing Law</h1>
+                                        </div>
+                                    </div>
+                                    <div class="text-start">
+                                        <p>Through your use of Pinecrest or the Services, you agree that the laws of the State of Lithuania shall govern any matter or dispute relating to or arising out of this Agreement, as well as any dispute of any kind that may arise between you and the Company. In case any litigation specifically permitted under this Agreement is initiated, the Parties agree to submit to the personal jurisdiction of the state and federal courts of Vilnuis, Lithuania. <br>Any claim or lawsuit arising out of or in connection with this Agreement shall be interpreted and enforced by the laws of the Republic of Lithuania.
+                                            The Parties agree that this choice of law, venue, and jurisdiction provision is not permissive, but rather mandatory in nature. Any claims or disputes will be settled before the competent court in Vilnuis, the Lithuania, unless legislation or international conventions mandatorily prescribe otherwise.</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <div class="align-items-center d-flex mb-4">
+                                        <div>
+                                            <img src="assets/img/title-icon.svg" alt="" class="mb-1 me-3">
+                                        </div>
+                                        <div>
+                                            <h1 class="mb-0 text-black">Our Services</h1>
+                                        </div>
+                                    </div>
+                                    <div class="text-start">
+                                        <p>Pinecrest is a financial technologies services provider and acts as such by creating, hosting, maintaining and providing Pinecrest Services our website, mobile application or API (altogether referred to as “Pinecrest Platform”).</p>
+                                        <p>Pinecrest Services refers to the services which enable you and other users congregated on the Pinecrest Platform to</p>
+                                        <p>(a) Send, receive, buy and sell cryptocurrency such as bitcoin and Ethereum (“cryptocurrency transactions”) via a cryptocurrency wallet hosted by Pinecrest;<br>
+                                            (b) pay for bills and services such as airtime, data, electricity, cable TV (“refill transactions) via a fiat wallet hosted by Pinecrest (altogether referred to as the “Pinecrest Services”)</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <div class="align-items-center d-flex mb-4">
+                                        <div>
+                                            <img src="assets/img/title-icon.svg" alt="" class="mb-1 me-3">
+                                        </div>
+                                        <div>
+                                            <h1 class="mb-0 text-black">Eligibility</h1>
+                                        </div>
+                                    </div>
+                                    <div class="text-start">
+                                        <p>To be eligible to use or access the Pinecrest Platform and the Pinecrest Services, the following conditions must be met by you –<br>
+                                            (a) must create a Pinecrest user account on the Pinecrest Platform;</p>
+                                        <p>(b) as an individual, be at least 18 or be of legal age to form a binding contract under applicable laws;</p>
+                                        <p>(c) as an individual, legal person, or other organization, you have full power, authority and capacity to accept these Terms of Use;</p>
+                                        <p>(d) as an employee or agent of a legal entity, you must have the full power, authority and capacity to accept these Terms of Use on their behalf and bind such legal entity to these Terms of Use;</p>
+                                        <p>(e) you have not been previously restricted from using or accessing the Pinecrest Platform and Pinecrest Services</p>
+                                        <p>(f) your use of Pinecrest Services will not violate any applicable laws and regulations applicable to you, including but not limited to regulations on anti-money laundering, anti-corruption, and counter-terrorist financing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer-->
+        <footer class="footer dark-mode bg-dark py-5 footerbg">
+            <div class="container">
+            <div class="row">
+                <div class="col mb-3">
+                <img src="assets/img/logo-light.png" alt="" width="200px">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-10">
+                <p class="text-white">Pinecrest is an alternative payment solutions company that facilitates the easy use of cryptocurrencies for everyday transactions. By harnessing the intrinsic power of Blockchain technology, Pinecrest is set to make Crypto easy for mankind, hereby creating a new and sustainable path for the present and future generations.</p>
+                <p class="text-white">ISO Certification <span class="fw-bold text-white">(ISO 9001, 27001).</span></p>
+                </div>
+                <div class="col-lg-2 text-end d-none d-sm-block">
+                <img src="assets/img/bitcoin-3d.svg" alt="">
+                </div>
+            </div>
+            
+            <div class="row mb-6" style="background-color: #005147; border-radius: 1rem; align-items: center;">
+                <div class="col-lg-2 text-end">
+                <h6 class="text-white mb-0 fw-bold">Partners and accolades</h5>
+                </div>
+                <div class="col-lg-10 text-end d-none d-sm-block py-3">
+                <div class="container">
+                    <div class="row py-2 text-center" style="background-color: #fff; border-radius: 0.5rem; align-items: center;">
+                    <div class="col">
+                        <img src="assets/img/visa.png" alt="" width="60px">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/mastercard.png" alt="" width="60px">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/Verified-by-Visa.png" alt="" width="60px">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/MasterCard-SecureCode.png" alt="" width="60px">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/PayGate_DPO_Company_2.png" alt="" width="60px">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/ACB_Top_20_Tag__2__2.png" alt="" width="60px">
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <hr>
+            </div>
+            <div class="container pt-md-2 pt-lg-3 pt-xl-4">
+            <div class="row pb-5 pt-sm-2 mb-lg-2">
+                <div class="col-md-4 col-lg-3 pb-2 pb-md-0 mb-4 mb-md-0">
+                <a class="navbar-brand py-0 mb-3 mb-md-4" href="./"><span class="text-primary flex-shrink-0 me-2">
+                    <img src="./assets/img/footericon.png" width="110px" alt="" srcset="">
+                </a>
+                <p class="fs-sm mb-0 text-white">&copy; <script>document.write(new Date().getFullYear());</script> Pinecrest.<br>All Rights Reserved</p>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+                <h4 class="h6 fw-bold pb-lg-1">Company</h4>
+                <ul class="nav flex-column">
+                    <li><a class="nav-link fw-normal py-1 px-0" href="#">Features</a></li>
+                    <li><a class="nav-link fw-normal py-1 px-0" href="#">Reviews</a></li>
+                    <li><a class="nav-link fw-normal py-1 px-0" href="#">How it works</a></li>
+                    <li><a class="nav-link fw-normal py-1 px-0" href="#">Pricing</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a class="btn btn-icon btn-sm btn-secondary btn-facebook rounded-circle me-3" href="#">
+                    <i class="ai-facebook"></i>
+                    </a>
+                    <a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle me-3" href="#">
+                    <i class="ai-instagram"></i>
+                    </a>
+                    <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="#">
+                    <i class="ai-linkedin"></i>
+                    </a>
+                </div>
+                </div>
+                <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+                <h4 class="h6 fw-bold pb-lg-1">Support</h4>
+                <ul class="nav flex-column">
+                    <li><a class="nav-link fw-normal py-1 px-0" href="#">Help center</a></li>
+                    <li><a class="nav-link fw-normal py-1 px-0" href="terms">Terms of service</a></li>
+                    <li><a class="nav-link fw-normal py-1 px-0" href="#">Legal</a></li>
+                    <li><a class="nav-link fw-normal py-1 px-0" href="#">Privacy policy</a></li>
+                </ul>
+                </div>
+                <div class="ccol-md-4 col-lg-3">
+                <h4 class="h6 fw-bold pb-2 mb-0 mb-lg-1">Install App</h4>
+                <a class="btn btn-secondary px-3 py-2 mt-3 me-3 me-md-0" href="#">
+                    <img class="mx-1 d-dark-mode-none" src="assets/img/market/appstore-dark.svg" width="120" alt="App Store">
+                    <img class="mx-1 d-none d-dark-mode-block" src="assets/img/market/appstore-light.svg" width="120" alt="App Store">
+                </a>
+                <a class="btn btn-secondary px-3 py-2 mt-3 me-3 me-md-0" href="#">
+                    <img class="mx-1 d-dark-mode-none" src="assets/img/market/googleplay-dark.svg" width="119" alt="Google Play">
+                    <img class="mx-1 d-none d-dark-mode-block" src="assets/img/market/googleplay-light.svg" width="119" alt="Google Play">
+                </a>
+                </div>
+            </div>
+            
+            </div>
+        </footer>
+  
+        <!-- Back to top button-->
+        <a class="btn-scroll-top" href="#top" data-scroll>
+        <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+        </svg><i class="ai-arrow-up"></i>
+        </a>
+  
+        <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/aos/dist/aos.js"></script>
+        <script src="assets/js/main.js"></script>
+  
+    </body>
+</html>
