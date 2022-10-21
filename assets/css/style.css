@@ -7513,6 +7513,10 @@ fieldset:disabled .btn {
     top: 10% !important
 }
 
+.top-40 {
+    top: 23% !important
+}
+
 .top-50 {
     top: 50% !important
 }
@@ -11206,6 +11210,9 @@ fieldset:disabled .btn {
     }
     .pt-lg-6 {
         padding-top: 12rem !important
+    }
+    .pt-lg-7 {
+        padding-top: 9rem !important
     }
     .pe-lg-0 {
         padding-right: 0 !important
