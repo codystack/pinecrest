@@ -960,7 +960,7 @@ progress {
     --ar-gutter-y: 3rem
 }
 
-@media(min-width: 576px) {
+@media(min-width: 300px) {
     .col-sm {
         flex: 1 0 0%
     }
@@ -9260,7 +9260,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 576px) {
+@media(min-width: 300px) {
     .float-sm-start {
         float: left !important
     }
