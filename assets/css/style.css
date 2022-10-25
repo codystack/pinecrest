@@ -9260,7 +9260,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media(min-width: 300px) {
+@media(min-width: 576px) {
     .float-sm-start {
         float: left !important
     }
@@ -16681,7 +16681,7 @@ hr.dropdown-divider {
 
 .navbar.navbar-stuck {
     background-color: var(--ar-navbar-stuck-bg);
-    --ar-navbar-color: #016156;
+    --ar-navbar-color: #ffffff;
 }
 
 .navbar .navbar-collapse {
