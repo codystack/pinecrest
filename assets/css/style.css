@@ -7057,7 +7057,9 @@ fieldset:disabled .btn {
 }
 
 .signinbg {
-    background-color: #f4fafd !important
+    background-image: url('../../assets/img/loginbgsvg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .link-primary {
